@@ -260,6 +260,11 @@ def generate_signal(df, symbol=""):
             "confidence": "low"
         }
 
+@app.route('/', methods=['GET'])
+def home():
+    return "✅ Trading Signals API is running. Use /get_signals or /health."
+
+
 if __name__ == '__main__':
     print("Starting Trading Signals Server...")
     print("Server running on http://localhost:5501")
