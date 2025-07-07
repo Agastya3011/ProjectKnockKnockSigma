@@ -267,7 +267,6 @@ def home():
 
 if __name__ == '__main__':
     print("Starting Trading Signals Server...")
-    print("Server running on http://localhost:5501")
     print("Make sure to install required packages: pip install flask flask-cors requests pandas numpy")
     import os
     port = int(os.environ.get("PORT", 5501))
