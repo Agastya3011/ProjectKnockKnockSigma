@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import numpy as np
 import time
+import os
 from datetime import datetime
 
 app = Flask(__name__)
@@ -268,6 +269,6 @@ def home():
 if __name__ == '__main__':
     print("Starting Trading Signals Server...")
     print("Make sure to install required packages: pip install flask flask-cors requests pandas numpy")
-    import os
+    
     port = int(os.environ.get("PORT", 5501))
     app.run(debug=False, host='0.0.0.0', port=port)
